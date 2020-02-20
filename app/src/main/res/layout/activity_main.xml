@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:hint="Enter QR id"
+        android:layout_margin="50dp"
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/focus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Focus on QR"
+        android:layout_below="@+id/surfaceView"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/focus_text"
+        android:text="Fetch data"
+        android:id="@+id/fetch"
+        />
+
+</RelativeLayout>
